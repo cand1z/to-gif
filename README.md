@@ -11,8 +11,9 @@ Simple bash script to convert video to gif.
 You can see the documentation here:
 
 ```
-https://ffmpeg.org/ffmpeg.html
+    https://ffmpeg.org/ffmpeg.html
 ```
+
 
 ## Install
 
@@ -34,7 +35,6 @@ Giving execute permission to the script
 ```console
     chmod +x toGif.sh
 ```
-
 
 
 ## Example of use
