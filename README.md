@@ -4,8 +4,18 @@
 Simple bash script to convert video to gif.
 
 
+## Pendencies
 
-## How to setup
+- ffmpeg
+
+You can see the documentation here:
+
+```
+https://ffmpeg.org/ffmpeg.html
+```
+
+## Install
+
 
 Cloning the project
 
