@@ -19,19 +19,19 @@ https://ffmpeg.org/ffmpeg.html
 
 Cloning the project
 
-```bash
+```console
     git clone https://github.com/cand1z/toGif.git
 ```
 
 Enter the project directory
 
-```bash
+```console
     cd toGif
 ```
 
 Giving execute permission to the script
 
-```bash
+```console
     chmod +x toGif.sh
 ```
 
@@ -49,7 +49,7 @@ Giving execute permission to the script
 
 To decrease the file size (consequently decrease its resolution), we can use the gifsicle tool, as shown in the following example:
 
-```bash
+```console
     gifsicle --optimize=3 --output "filename-optimized.gif" --resize-height 1000 "filename.gif"
 ```
 
