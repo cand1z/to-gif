@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# Verifica se o arquivo de vídeo foi fornecido como argumento
+# Check if the video file was provided as an argument
 if [ -z "$1" ]; then
-  echo "Por favor, forneça um arquivo de vídeo como argumento"
+  echo "Please provide a video file as an argument."
   exit 1
 fi
 
-# Define o nome do arquivo GIF a ser gerado
+# Defines the name of the GIF file to be generated
 filename="${1%.*}.gif"
 
-# Usa o programa ffmpeg para converter o arquivo de vídeo em um arquivo GIF
-ffmpeg -i "$1" -vf "scale=320:-1:flags=lanczos,fps=15" -loop 0 "$filename"
+# Use the ffmpeg program to convert the video file into a GIF file
+ffmpeg -i "$1" -vf "scale=320:-1:flags=lanczos,fps=10" -loop 0 "$filename"
 
-# Verifica se a conversão foi concluída com sucesso
+# Checks if the conversion completed successfully
 if [ $? -eq 0 ]; then
-  echo "Arquivo GIF gerado com sucesso: $filename"
+  echo "Successfully generated GIF file: $filename"
 else
-  echo "Ocorreu um erro ao gerar o arquivo GIF"
+  echo "An error occurred while generating the GIF file."
 fi
 
